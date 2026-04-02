@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tituloDetalle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle del servicio"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/textoServicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Corte de cabello - 30 minutos"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnSolicitar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solicitar turno"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>
