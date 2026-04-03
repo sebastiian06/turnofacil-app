@@ -1,0 +1,17 @@
+# En la raíz de ProgramacionMovil, crea el archivo .gitignore
+echo "# Dependencias de Node.js" > .gitignore
+echo "node_modules/" >> .gitignore
+echo "package-lock.json" >> .gitignore
+echo "" >> .gitignore
+echo "# Archivos de entorno" >> .gitignore
+echo ".env" >> .gitignore
+echo ".env.local" >> .gitignore
+echo ".env.production" >> .gitignore
+echo "" >> .gitignore
+echo "# Logs" >> .gitignore
+echo "*.log" >> .gitignore
+echo "npm-debug.log*" >> .gitignore
+echo "" >> .gitignore
+echo "# Archivos del sistema" >> .gitignore
+echo ".DS_Store" >> .gitignore
+echo "Thumbs.db" >> .gitignore
