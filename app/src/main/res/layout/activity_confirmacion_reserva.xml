@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Icono de éxito -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:id="@+id/imageViewCheck"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@android:drawable/checkbox_on_background"
+                app:tint="#4CAF50" />
+
+            <TextView
+                android:id="@+id/textViewTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡RESERVADO!"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#4CAF50"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/textViewSubtitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tu turno ha sido confirmado"
+                android:textSize="16sp"
+                android:textColor="#666666"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Card con detalles de la reserva -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DETALLES DE LA RESERVA"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Servicio -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Servicio:"
+                        android:textStyle="bold"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/textViewServicio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" />
+
+                </LinearLayout>
+
+                <!-- Fecha -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Fecha:"
+                        android:textStyle="bold"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/textViewFecha"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" />
+
+                </LinearLayout>
+
+                <!-- Hora -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Hora:"
+                        android:textStyle="bold"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/textViewHora"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#2196F3" />
+
+                </LinearLayout>
+
+                <!-- Nombre Cliente -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cliente:"
+                        android:textStyle="bold"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/textViewNombre"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" />
+
+                </LinearLayout>
+
+                <!-- Documento -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Documento:"
+                        android:textStyle="bold"
+                        android:textColor="#555555" />
+
+                    <TextView
+                        android:id="@+id/textViewDocumento"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonVolverInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Volver al inicio"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/buttonVerMisTurnos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver mis turnos"
+                android:backgroundTint="#2196F3"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/buttonNuevaReserva"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hacer otra reserva"
+                android:backgroundTint="#FF9800" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
